@@ -41,8 +41,8 @@ You can directly pull this [![https://www.singularity-hub.org/static/img/hosted-
   - Select a folder for exporting(eg. "test-simvascular-project-data"). 
   
   Step 2: Write and load a solver script.
-  - Write the script: Follow instructions given in the template file "sample_jobscript.sh" and modify the parameters according to your requirements
-  - Save this script to the folder containing the exported data files from SimVascular("test-simvascular-project-data").
+  - Write the script: Follow instructions given in the template file "sample_jobscript" and modify the parameters according to your requirements.
+  - Save the script as your-job-script.sh to the folder containing the exported data files from SimVascular after step 1("test-simvascular-project-data") .
   This folder should then contain all the Data Files and the job script required for the simulation.
   
   Step 3: Upload this data-folder on your supercomputing cluster account's working directory(usually /scratch/$USER).
