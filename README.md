@@ -72,7 +72,7 @@ You can directly pull this [![https://www.singularity-hub.org/static/img/hosted-
   ```
   - To check the status/progress of the submitted job
   ```sh
-  $ sacct --starttime=YYYY-MM-DD --jobs=your_job-id --format=User,JobName,JobId,partition,state,time,start,end,elapsed,MaxRss,MaxVMSize,nnodes,ncpus,nodelist
+  $ sacct --starttime=YYYY-MM-DD --format=User,JobName,JobId,partition,state,time,start,end,elapsed,MaxRss,MaxVMSize,nnodes,ncpus,nodelist
 
   ```
   - Finally check the output file(.out file) generated in </scratch/$USER/test-simvascular-project-data> for simulation performance details. 
