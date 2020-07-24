@@ -59,7 +59,7 @@ You can directly pull this [![https://www.singularity-hub.org/static/img/hosted-
    - navigate to the working directory(eg. /scratch/$USER/test-simvascular-project-data) from where the simulation will be launched.
    - Enter the following commands to submit the job:
    ```sh
-   $ module load /slurm/summit
+   $ module load slurm/summit
    $ sbatch your-job-script.sh
    ```
    
@@ -81,10 +81,10 @@ You can directly pull this [![https://www.singularity-hub.org/static/img/hosted-
 ## 4. Download generated files 
   - Compress the folder containing generated files(will be named n-procs_case for n cores used):
   ```sh
-  $ tar -cvzf <<n-cores>-procs_case>.tar.gz </scratch/$USER/test-simvascular-project-data/<n-cores>-procs_case>
+  $ tar -cvzf <<n-cores>-procs_case>.tar.gz </scratch/summit/$USER/test-simvascular-project-data/<n-cores>-procs_case>
   ```
   - Use globus file transfer or secure copy the zipped folder on your local computer:
   ```sh
-  scp -rv <username>@login.rc.colorado.edu:</scratch/$USER/test-simvascular-project-data/<n-cores>-procs_case.tar.gz> <target/storage/path/on/your/computer> 
+  scp -rv <username>@login.rc.colorado.edu:</scratch/summit/$USER/test-simvascular-project-data/<n-cores>-procs_case.tar.gz> <target/storage/path/on/your/computer> 
   ```
   
