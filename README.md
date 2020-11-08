@@ -11,8 +11,13 @@ Files and resources to :
 ## 1. To build a container for use on the cluster
 You can directly pull this [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/4568) ready built container onto your supercomputing cluster account's project directory (the directory intended to store software builds and smaller data sets) by: 
   - Login to your cluster account
+  - go to projects directory
+  - ssh into compile node
+  - load singularity module
 ```sh
   $ cd projects/$USER/
+  $ ssh scompile
+  $ module load singularity/
   $ mkdir svsolver-container-build
   $ cd svsolver-container-build
   $ singularity pull simvascular-svsolver.sif shub://aksa2832/Simvascular-on-cluster
@@ -28,6 +33,8 @@ You can directly pull this [![https://www.singularity-hub.org/static/img/hosted-
   
   ```sh
   $ cd projects/$USER/
+  $ ssh scompile
+  $ module load singularity/
   $ mkdir svsolver-container-build
   $ cd svsolver-container-build
   $ singularity pull simvascular-svsolver.sif shub://<yourgithubusername>/<svsolver_github_reponame>
